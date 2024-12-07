@@ -1,24 +1,16 @@
 class ResponseModel {
-    codeResponse?: string;
+    codeResponse?: number;
     messageResponse?: string;
-    dataResponse?: string;
+    dataResponse?: any;
   
     constructor(
-      codeResponse?: string,
+      codeResponse?: number,
       messageResponse?: string,
-      dataResponse?: string,
+      dataResponse?: any,
     ) {
       this.codeResponse = codeResponse;
       this.messageResponse = messageResponse;
       this.dataResponse = dataResponse;
-    }
-  
-    // Method untuk menampilkan informasi pengguna
-    displayResponseInfo(): string {
-      return `User Info:
-        ID: ${this.codeResponse}
-        Name: ${this.messageResponse}
-        Email: ${this.dataResponse}`;
     }
   }
   
