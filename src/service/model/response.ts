@@ -1,12 +1,12 @@
-class ResponseModel {
+class ResponseModel<T = any> {
     codeResponse?: number;
     messageResponse?: string;
-    dataResponse?: any;
+    dataResponse?: T;
   
     constructor(
       codeResponse?: number,
       messageResponse?: string,
-      dataResponse?: any,
+      dataResponse?: T,
     ) {
       this.codeResponse = codeResponse;
       this.messageResponse = messageResponse;
